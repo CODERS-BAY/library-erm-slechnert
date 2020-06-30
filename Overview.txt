@@ -1,0 +1,23 @@
+Translations(TransCode pk, language)
+Authors(Author_ID pk, name)
+Publishing house(Publisher_ID PK, Name)
+Subject Areas(name pk)
+Personal Details(SSN pk, first name, last name)
+Customers(ID pk, SSN fk)
+Employees(ID pk, SSN fk)
+Subject Area(name)
+Colaborations(collab_id pk, author_ID fk)
+Books(Book_ID PK, Publisher ID fk, Main Author ID fk, Trans Code fk, collab_id fk, title, subject area fk)
+Journals(journal_id pk, issue, name, subject area fk, Publisher_ID fk)
+Articles(article id pk, journal id fk, reference id)
+References(ID pk, source(journal id) fk, referenced article fk)
+add article (ref id) fk 
+Book_Inventory(Item ID pk, book fk, shelf)
+Journal_Inventory
+Book_Keywords(name pk, subject area pk fk, assigned ID)
+Journal_Keywords
+Lending(Lending-ID pk, item id id, borrowed_at, borrowed_until, borrower id fk, employeeid_check out fk, employeeid_checkin fk, paid at, amount to pay)
+Reservation(item id pk fk, reserved until pk, reserved by pk fk)
+
+
+
