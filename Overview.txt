@@ -19,5 +19,5 @@ Journal_Keywords
 Lending(Lending-ID pk, item id id, borrowed_at, borrowed_until, borrower id fk, employeeid_check out fk, employeeid_checkin fk, paid at, amount to pay)
 Reservation(item id pk fk, reserved until pk, reserved by pk fk)
 
-
+This is fun
 
